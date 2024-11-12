@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function abcd(){
+            for(var f =1; f<12; f++){
+                console.log(f);
+            }
+            console.log(f);
+        }
+        abcd();
+
+
+// to copy an array
+        var xyz=[23,4,6,8,9];
+        var zxy=[...xyz];
+        zxy.pop();
+
+
+        // to copy an object
+
+        var obj ={name:"Purpose", purpose:"Training, and Developments",};
+
+        var copyobj = {...obj};
+
+
+        // .forEach() Loop
+
+        var loop = [23,34534,2131,553,2,32,112,31,23,23,123,213,4,3,42];
+        loop.forEach(function(AllnumbersInsideArray){
+                console.log(AllnumbersInsideArray + 10);
+        })
+
+        // forin loop
+
+        var objects={name:"Anonymous", 
+                        age:24,
+                        School:"UEF",
+                        Degree:"Bs Physics",
+                        Shift:"Morning",
+                        ID:"bsf1901601",
+                        }
+                        for(var key in objects){
+                            // console.log(key);
+                            // console.log(objects[key]);
+                            console.log(key, objects[key]);
+                        }
+
+// do-while loop
+
+var sak = 1;
+do{
+    console.log('hey');
+    sak++}while(sak<12)
+
+
+    // Example of callback function (asynchronous javascript)
+
+    setTimeout(function(){
+        console.log("2 seconds ka baad chalaao");
+    },2000);
+
+
+    // delete object props
+
+
+    var zz={
+        name:"anonymous",
+        age:24
+    }
+    delete zz.age;
+
+    
+
+
+
+    </script>
+</body>
+</html>
